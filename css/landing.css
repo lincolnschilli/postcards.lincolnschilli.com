@@ -1,0 +1,247 @@
+/* Variables */
+/* Styles */
+@font-face {
+  font-family: MuseoSlab500;
+  src: url("/fonts/Museo_Slab_500.woff");
+}
+@font-face {
+  font-family: MuseoSlab500Italic;
+  src: url("/fonts/Museo_Slab_500_Italic.woff");
+}
+body {
+  background-color: #d2f2ab /* Fallback for background image loading */;
+  background-image: url("/img/landing/background.jpg"), url("/img/landing/background.jpg");
+  background-repeat: repeat-y, repeat-y;
+  background-position: 0% 0%, 100% 0%;
+}
+#deprecation-message {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 1rem 28px;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75;
+  letter-spacing: 0.1em;
+  -webkit-transform: translateY(0);
+  -khtml-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: transform 300ms ease-out;
+  -khtml-transition: transform 300ms ease-out;
+  -moz-transition: transform 300ms ease-out;
+  -ms-transition: transform 300ms ease-out;
+  -o-transition: transform 300ms ease-out;
+  transition: transform 300ms ease-out;
+}
+#deprecation-message button {
+  position: absolute;
+  right: 5px;
+  width: 18px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding: 0;
+  margin-right: 0.5rem;
+}
+#deprecation-message svg {
+  fill: currentColor;
+}
+#deprecation-message.dismissed {
+  -webkit-transform: translateY(-100%);
+  -khtml-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+#landing {
+  -webkit-box-shadow: 0 0 8px 1px rgba(0,0,0,0.2);
+  -khtml-box-shadow: 0 0 8px 1px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 0 8px 1px rgba(0,0,0,0.2);
+  -ms-box-shadow: 0 0 8px 1px rgba(0,0,0,0.2);
+  -o-box-shadow: 0 0 8px 1px rgba(0,0,0,0.2);
+  box-shadow: 0 0 8px 1px rgba(0,0,0,0.2);
+}
+#landing .header,
+#landing .footer {
+  text-align: center;
+  background-color: #d2f2ab;
+}
+#landing .header .call-to-action,
+#landing .footer .call-to-action {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #eff8fd;
+  text-decoration: none;
+  -webkit-border-radius: 12px;
+  -khtml-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
+  -khtml-box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
+  -ms-box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
+  -o-box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
+  background-color: #d35400;
+  background-repeat: repeat-x;
+  border: 1px solid rgba(0,0,0,0.1) rgba(0,0,0,0.1) #b3b3b3;
+  margin: 2rem;
+}
+#landing .header .call-to-action:active,
+#landing .footer .call-to-action:active {
+  background-color: #b14803;
+}
+@media (min-width: 768px) {
+  #landing .header .call-to-action,
+  #landing .footer .call-to-action {
+    font-size: 5rem;
+    margin: 3rem;
+  }
+}
+#landing .header {
+  overflow: hidden;
+  position: relative;
+}
+#landing .header .wrapper {
+  background-image: url("/img/landing/header3.png"), url("/img/landing/header-background-small.png");
+  background-size: 300px auto, cover;
+  background-repeat: no-repeat, repeat;
+  background-position: 50% 2%, 0% 100%;
+  padding-top: 200px;
+}
+@media (min-width: 768px) {
+  #landing .header .wrapper {
+    background-image: url("/img/landing/header3.png"), url("/img/landing/header-background-small.png");
+    background-size: 500px auto, cover;
+    background-repeat: no-repeat, repeat;
+    background-position: 50% 2%, 0% 100%;
+    padding-top: 320px;
+  }
+}
+@media (min-width: 992px) {
+  #landing .header .wrapper {
+    background-image: url("/img/landing/header3.png"), url("/img/landing/header1.png"), url("/img/landing/header2.png"), url("/img/landing/header-background.png");
+    background-size: 35% auto, 30% auto, 30% auto, cover;
+    background-repeat: no-repeat, no-repeat, no-repeat, repeat;
+    background-position: 50% 2%, 7% 15%, 93% 15%, 0% 100%;
+    padding-top: 280px;
+  }
+}
+#landing .header .headline {
+  background-color: rgba(255,255,255,0.5);
+  padding: 5px 10px;
+  line-height: 6rem;
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: 'MuseoSlab500', Arial, Helvetica, sans-serif;
+  color: #091d53;
+}
+#landing .header .subheadline {
+  background-color: rgba(255,255,255,0.5);
+  padding: 5px 10px;
+  line-height: 5rem;
+  font-size: 2rem;
+  font-family: 'MuseoSlab500Italic', Arial, Helvetica, sans-serif;
+  color: #091d53;
+}
+@media (min-width: 768px) {
+  #landing .header .headline {
+    font-size: 5rem;
+    line-height: 8rem;
+  }
+  #landing .header .subheadline {
+    font-size: 3rem;
+    line-height: 6rem;
+  }
+}
+#landing .benefits {
+  text-align: center;
+  overflow: hidden;
+}
+#landing .benefits .benefit {
+  background-color: #fffced;
+  display: inline-block;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+#landing .benefits .benefit:nth-child(2) {
+  background-color: #fff8d6;
+}
+#landing .benefits .benefit h1 {
+  color: #7d6e2c;
+  font-weight: bold;
+}
+#landing .benefits .benefit img {
+  width: 40%;
+}
+#landing .benefits .benefit p {
+  color: #7d6e2c;
+  font-size: 1.75rem;
+}
+#landing .examples {
+  text-align: center;
+}
+#landing .examples h1 {
+  margin: 0;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px;
+  background-color: #7d6e2c;
+}
+#landing .examples .example {
+  display: inline-block;
+  padding: 15px;
+  width: 100%;
+  background-color: #fffced;
+}
+#landing .examples .example:nth-child(2n) {
+  background-color: #fff8d6;
+}
+#landing .examples .example h2 {
+  color: #7d6e2c;
+}
+#landing .examples .example img {
+  width: 40%;
+  margin: 10px 4%;
+}
+#landing .examples .example p {
+  background-color: rgba(0,0,0,0.1);
+  margin-top: 10px;
+  padding: 15px;
+  color: #7d6e2c;
+  font-size: 2rem;
+  text-align: left;
+}
+#landing .footer .wrapper {
+  background-image: url("/img/landing/header-background.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: 0% 100%;
+}
+#landing .footer img {
+  width: 100px;
+}
+@media (min-width: 768px) {
+  #landing .footer img {
+    width: 150px;
+  }
+}

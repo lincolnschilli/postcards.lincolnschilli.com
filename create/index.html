@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Europe Travel Postcards</title>
+
+		
+		<!-- stylesheets -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+		
+	<link rel="stylesheet" href="https://postcards.lincolnschilli.com/css/main.css">
+
+	<style type="text/css">
+
+					#postcard-country .js-select .options li.country-austria span {
+				background-image: url("../img/flags/austria.png");
+			}
+			.country-austria > span {
+				background-color: #ffa6a6;
+			}
+					#postcard-country .js-select .options li.country-belgium span {
+				background-image: url("../img/flags/belgium.png");
+			}
+			.country-belgium > span {
+				background-color: #f4b0b0;
+			}
+					#postcard-country .js-select .options li.country-bosniaherzegovina span {
+				background-image: url("../img/flags/bosniaherzegovina.png");
+			}
+			.country-bosniaherzegovina > span {
+				background-color: #98c8eb;
+			}
+					#postcard-country .js-select .options li.country-bulgaria span {
+				background-image: url("../img/flags/bulgaria.png");
+			}
+			.country-bulgaria > span {
+				background-color: #99ccb0;
+			}
+					#postcard-country .js-select .options li.country-croatia span {
+				background-image: url("../img/flags/croatia.png");
+			}
+			.country-croatia > span {
+				background-color: #f9b1b1;
+			}
+					#postcard-country .js-select .options li.country-czechrepublic span {
+				background-image: url("../img/flags/czechrepublic.png");
+			}
+			.country-czechrepublic > span {
+				background-color: #f9adad;
+			}
+					#postcard-country .js-select .options li.country-denmark span {
+				background-image: url("../img/flags/denmark.png");
+			}
+			.country-denmark > span {
+				background-color: #f8a7a7;
+			}
+					#postcard-country .js-select .options li.country-finland span {
+				background-image: url("../img/flags/finland.png");
+			}
+			.country-finland > span {
+				background-color: #98bed1;
+			}
+					#postcard-country .js-select .options li.country-france span {
+				background-image: url("../img/flags/france.png");
+			}
+			.country-france > span {
+				background-color: #a8b6d7;
+			}
+					#postcard-country .js-select .options li.country-germany span {
+				background-image: url("../img/flags/germany.png");
+			}
+			.country-germany > span {
+				background-color: #efe3b1;
+			}
+					#postcard-country .js-select .options li.country-greece span {
+				background-image: url("../img/flags/greece.png");
+			}
+			.country-greece > span {
+				background-color: #d6e6fa;
+			}
+					#postcard-country .js-select .options li.country-hungary span {
+				background-image: url("../img/flags/hungary.png");
+			}
+			.country-hungary > span {
+				background-color: #82b289;
+			}
+					#postcard-country .js-select .options li.country-ireland span {
+				background-image: url("../img/flags/ireland.png");
+			}
+			.country-ireland > span {
+				background-color: #77e48b;
+			}
+					#postcard-country .js-select .options li.country-italy span {
+				background-image: url("../img/flags/italy.png");
+			}
+			.country-italy > span {
+				background-color: #a6fbb6;
+			}
+					#postcard-country .js-select .options li.country-luxembourg span {
+				background-image: url("../img/flags/luxembourg.png");
+			}
+			.country-luxembourg > span {
+				background-color: #ecb6bb;
+			}
+					#postcard-country .js-select .options li.country-macedonia span {
+				background-image: url("../img/flags/macedonia.png");
+			}
+			.country-macedonia > span {
+				background-color: #ffa6a6;
+			}
+					#postcard-country .js-select .options li.country-montenegro span {
+				background-image: url("../img/flags/montenegro.png");
+			}
+			.country-montenegro > span {
+				background-color: #e79b9b;
+			}
+					#postcard-country .js-select .options li.country-netherlands span {
+				background-image: url("../img/flags/netherlands.png");
+			}
+			.country-netherlands > span {
+				background-color: #ebad86;
+			}
+					#postcard-country .js-select .options li.country-norway span {
+				background-image: url("../img/flags/norway.png");
+			}
+			.country-norway > span {
+				background-color: #bbd5ec;
+			}
+					#postcard-country .js-select .options li.country-poland span {
+				background-image: url("../img/flags/poland.png");
+			}
+			.country-poland > span {
+				background-color: #f5c9cd;
+			}
+					#postcard-country .js-select .options li.country-portugal span {
+				background-image: url("../img/flags/portugal.png");
+			}
+			.country-portugal > span {
+				background-color: #7cb594;
+			}
+					#postcard-country .js-select .options li.country-romania span {
+				background-image: url("../img/flags/romania.png");
+			}
+			.country-romania > span {
+				background-color: #fdefb6;
+			}
+					#postcard-country .js-select .options li.country-serbia span {
+				background-image: url("../img/flags/serbia.png");
+			}
+			.country-serbia > span {
+				background-color: #f5b9b9;
+			}
+					#postcard-country .js-select .options li.country-slovakia span {
+				background-image: url("../img/flags/slovakia.png");
+			}
+			.country-slovakia > span {
+				background-color: #c8e8f2;
+			}
+					#postcard-country .js-select .options li.country-slovenia span {
+				background-image: url("../img/flags/slovenia.png");
+			}
+			.country-slovenia > span {
+				background-color: #65cba8;
+			}
+					#postcard-country .js-select .options li.country-spain span {
+				background-image: url("../img/flags/spain.png");
+			}
+			.country-spain > span {
+				background-color: #f4adad;
+			}
+					#postcard-country .js-select .options li.country-sweden span {
+				background-image: url("../img/flags/sweden.png");
+			}
+			.country-sweden > span {
+				background-color: #ffecc2;
+			}
+					#postcard-country .js-select .options li.country-switzerland span {
+				background-image: url("../img/flags/switzerland.png");
+			}
+			.country-switzerland > span {
+				background-color: #e68380;
+			}
+					#postcard-country .js-select .options li.country-turkey span {
+				background-image: url("../img/flags/turkey.png");
+			}
+			.country-turkey > span {
+				background-color: #ebbebf;
+			}
+					#postcard-country .js-select .options li.country-unitedkingdom span {
+				background-image: url("../img/flags/unitedkingdom.png");
+			}
+			.country-unitedkingdom > span {
+				background-color: #b1c0e7;
+			}
+		
+		/* comment to reset sublime text display */
+	</style>
+
+	</head>
+
+	<body>
+		<aside id="deprecation-message" class="dismissed">
+			This service has been discontinued and the site is now read-only
+			<button type="button" onclick="dismissDeprecationMessage()">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/></svg>
+			</button>
+		</aside>
+		
+	<div id="floating-preview">
+		<a class="btn btn-lg btn-info fullscreen">
+			Preview <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+		</a>
+	</div>
+
+	<div id="preview">
+		<div class="wrapper">
+			<canvas id="preview-canvas" class="canvas"></canvas>
+			<div class="actions">
+				<a id="flip" class="btn btn-lg btn-success">
+					<span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> FLIP
+				</a>
+				<a class="btn btn-lg btn-info fullscreen">
+					Preview <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="postcard-form" class="container sheet">
+
+					<form method="POST" action="https://postcards.lincolnschilli.com/create" accept-charset="UTF-8" class="form-horizontal"><input name="_token" type="hidden" value="pfL5G261bLV67ktojQg8GwYyNfIO2TLhd4wRjZ6s">
+		
+
+			
+			<h1>Step 1: Choose the postcard country and image</h1>
+			<div id="postcard-country">
+				<input name="origin_country_id" type="hidden">
+				<div class="js-select">
+					<span class="placeholder"></span>
+					<div class="options">
+						<ul>
+															<li id="country-" class="country-austria" data-country='{&quot;name&quot;:&quot;Austria&quot;,&quot;tag&quot;:&quot;austria&quot;,&quot;color&quot;:&quot;#ffa6a6&quot;}'>
+									<span>Austria</span>
+								</li>
+															<li id="country-" class="country-belgium" data-country='{&quot;name&quot;:&quot;Belgium&quot;,&quot;tag&quot;:&quot;belgium&quot;,&quot;color&quot;:&quot;#f4b0b0&quot;}'>
+									<span>Belgium</span>
+								</li>
+															<li id="country-" class="country-bosniaherzegovina" data-country='{&quot;name&quot;:&quot;Bosnia And Herzegovina&quot;,&quot;tag&quot;:&quot;bosniaherzegovina&quot;,&quot;color&quot;:&quot;#98c8eb&quot;}'>
+									<span>Bosnia And Herzegovina</span>
+								</li>
+															<li id="country-" class="country-bulgaria" data-country='{&quot;name&quot;:&quot;Bulgaria&quot;,&quot;tag&quot;:&quot;bulgaria&quot;,&quot;color&quot;:&quot;#99ccb0&quot;}'>
+									<span>Bulgaria</span>
+								</li>
+															<li id="country-" class="country-croatia" data-country='{&quot;name&quot;:&quot;Croatia&quot;,&quot;tag&quot;:&quot;croatia&quot;,&quot;color&quot;:&quot;#f9b1b1&quot;}'>
+									<span>Croatia</span>
+								</li>
+															<li id="country-" class="country-czechrepublic" data-country='{&quot;name&quot;:&quot;Czech Republic&quot;,&quot;tag&quot;:&quot;czechrepublic&quot;,&quot;color&quot;:&quot;#f9adad&quot;}'>
+									<span>Czech Republic</span>
+								</li>
+															<li id="country-" class="country-denmark" data-country='{&quot;name&quot;:&quot;Denmark&quot;,&quot;tag&quot;:&quot;denmark&quot;,&quot;color&quot;:&quot;#f8a7a7&quot;}'>
+									<span>Denmark</span>
+								</li>
+															<li id="country-" class="country-finland" data-country='{&quot;name&quot;:&quot;Finland&quot;,&quot;tag&quot;:&quot;finland&quot;,&quot;color&quot;:&quot;#98bed1&quot;}'>
+									<span>Finland</span>
+								</li>
+															<li id="country-" class="country-france" data-country='{&quot;name&quot;:&quot;France&quot;,&quot;tag&quot;:&quot;france&quot;,&quot;color&quot;:&quot;#a8b6d7&quot;}'>
+									<span>France</span>
+								</li>
+															<li id="country-" class="country-germany" data-country='{&quot;name&quot;:&quot;Germany&quot;,&quot;tag&quot;:&quot;germany&quot;,&quot;color&quot;:&quot;#efe3b1&quot;}'>
+									<span>Germany</span>
+								</li>
+															<li id="country-" class="country-greece" data-country='{&quot;name&quot;:&quot;Greece&quot;,&quot;tag&quot;:&quot;greece&quot;,&quot;color&quot;:&quot;#d6e6fa&quot;}'>
+									<span>Greece</span>
+								</li>
+															<li id="country-" class="country-hungary" data-country='{&quot;name&quot;:&quot;Hungary&quot;,&quot;tag&quot;:&quot;hungary&quot;,&quot;color&quot;:&quot;#82b289&quot;}'>
+									<span>Hungary</span>
+								</li>
+															<li id="country-" class="country-ireland" data-country='{&quot;name&quot;:&quot;Ireland&quot;,&quot;tag&quot;:&quot;ireland&quot;,&quot;color&quot;:&quot;#77e48b&quot;}'>
+									<span>Ireland</span>
+								</li>
+															<li id="country-" class="country-italy" data-country='{&quot;name&quot;:&quot;Italy&quot;,&quot;tag&quot;:&quot;italy&quot;,&quot;color&quot;:&quot;#a6fbb6&quot;}'>
+									<span>Italy</span>
+								</li>
+															<li id="country-" class="country-luxembourg" data-country='{&quot;name&quot;:&quot;Luxembourg&quot;,&quot;tag&quot;:&quot;luxembourg&quot;,&quot;color&quot;:&quot;#ecb6bb&quot;}'>
+									<span>Luxembourg</span>
+								</li>
+															<li id="country-" class="country-macedonia" data-country='{&quot;name&quot;:&quot;Macedonia&quot;,&quot;tag&quot;:&quot;macedonia&quot;,&quot;color&quot;:&quot;#ffa6a6&quot;}'>
+									<span>Macedonia</span>
+								</li>
+															<li id="country-" class="country-montenegro" data-country='{&quot;name&quot;:&quot;Montenegro&quot;,&quot;tag&quot;:&quot;montenegro&quot;,&quot;color&quot;:&quot;#e79b9b&quot;}'>
+									<span>Montenegro</span>
+								</li>
+															<li id="country-" class="country-netherlands" data-country='{&quot;name&quot;:&quot;Netherlands&quot;,&quot;tag&quot;:&quot;netherlands&quot;,&quot;color&quot;:&quot;#ebad86&quot;}'>
+									<span>Netherlands</span>
+								</li>
+															<li id="country-" class="country-norway" data-country='{&quot;name&quot;:&quot;Norway&quot;,&quot;tag&quot;:&quot;norway&quot;,&quot;color&quot;:&quot;#bbd5ec&quot;}'>
+									<span>Norway</span>
+								</li>
+															<li id="country-" class="country-poland" data-country='{&quot;name&quot;:&quot;Poland&quot;,&quot;tag&quot;:&quot;poland&quot;,&quot;color&quot;:&quot;#f5c9cd&quot;}'>
+									<span>Poland</span>
+								</li>
+															<li id="country-" class="country-portugal" data-country='{&quot;name&quot;:&quot;Portugal&quot;,&quot;tag&quot;:&quot;portugal&quot;,&quot;color&quot;:&quot;#7cb594&quot;}'>
+									<span>Portugal</span>
+								</li>
+															<li id="country-" class="country-romania" data-country='{&quot;name&quot;:&quot;Romania&quot;,&quot;tag&quot;:&quot;romania&quot;,&quot;color&quot;:&quot;#fdefb6&quot;}'>
+									<span>Romania</span>
+								</li>
+															<li id="country-" class="country-serbia" data-country='{&quot;name&quot;:&quot;Serbia&quot;,&quot;tag&quot;:&quot;serbia&quot;,&quot;color&quot;:&quot;#f5b9b9&quot;}'>
+									<span>Serbia</span>
+								</li>
+															<li id="country-" class="country-slovakia" data-country='{&quot;name&quot;:&quot;Slovakia&quot;,&quot;tag&quot;:&quot;slovakia&quot;,&quot;color&quot;:&quot;#c8e8f2&quot;}'>
+									<span>Slovakia</span>
+								</li>
+															<li id="country-" class="country-slovenia" data-country='{&quot;name&quot;:&quot;Slovenia&quot;,&quot;tag&quot;:&quot;slovenia&quot;,&quot;color&quot;:&quot;#65cba8&quot;}'>
+									<span>Slovenia</span>
+								</li>
+															<li id="country-" class="country-spain" data-country='{&quot;name&quot;:&quot;Spain&quot;,&quot;tag&quot;:&quot;spain&quot;,&quot;color&quot;:&quot;#f4adad&quot;}'>
+									<span>Spain</span>
+								</li>
+															<li id="country-" class="country-sweden" data-country='{&quot;name&quot;:&quot;Sweden&quot;,&quot;tag&quot;:&quot;sweden&quot;,&quot;color&quot;:&quot;#ffecc2&quot;}'>
+									<span>Sweden</span>
+								</li>
+															<li id="country-" class="country-switzerland" data-country='{&quot;name&quot;:&quot;Switzerland&quot;,&quot;tag&quot;:&quot;switzerland&quot;,&quot;color&quot;:&quot;#e68380&quot;}'>
+									<span>Switzerland</span>
+								</li>
+															<li id="country-" class="country-turkey" data-country='{&quot;name&quot;:&quot;Turkey&quot;,&quot;tag&quot;:&quot;turkey&quot;,&quot;color&quot;:&quot;#ebbebf&quot;}'>
+									<span>Turkey</span>
+								</li>
+															<li id="country-" class="country-unitedkingdom" data-country='{&quot;name&quot;:&quot;United Kingdom&quot;,&quot;tag&quot;:&quot;unitedkingdom&quot;,&quot;color&quot;:&quot;#b1c0e7&quot;}'>
+									<span>United Kingdom</span>
+								</li>
+													</ul>
+					</div>
+				</div>
+			</div>
+
+			<div id="postcard-image">
+				<input name="front_image" type="hidden">
+				<ul class="list-inline">
+					<li class="upload">
+						<a>
+							<input name="image" type="file">
+							<div class="wrapper">
+								<span>
+									UPLOAD
+									<span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+									YOURS
+								</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="postcard-text">
+				<h1>Step 2: Write the message</h1>
+				<span class="info"><span class="number"></span> lines left</span>
+				<textarea class="form-control" rows="7" placeholder="Write about your awesome adventure here..." name="text" cols="50"></textarea>
+			</div>
+
+			<h1>Step 3: Fill in the address</h1>
+			<div id="postcard-address">
+				<div class="form-group">
+					<label for="name" class="col-sm-2 control-label">Name</label>
+					<div class="col-sm-6">
+						<input class="form-control address-line" placeholder="Name" name="name" type="text" id="name">
+    				</div>
+				</div>
+				<div class="form-group">
+					<label for="address_line_1" class="col-sm-2 control-label">Address Line</label>
+					<div class="col-sm-8">
+						<input class="form-control address-line" placeholder="Address Line" name="address_line_1" type="text" id="address_line_1">
+					</div>
+					<div id="add-address-line" class="col-sm-2">
+						<a class="btn btn-info">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+						</a>
+					</div>
+				</div>
+				<div class="form-group extra-address-line">
+					<div class="col-sm-8 col-sm-offset-2">
+						<input class="form-control address-line" placeholder="Address Line" name="address_line_2" type="text">
+					</div>
+				</div>
+				<div class="form-group extra-address-line">
+					<div class="col-sm-8 col-sm-offset-2">
+						<input class="form-control address-line" placeholder="Address Line" name="address_line_3" type="text">
+					</div>
+				</div>
+				<div class="form-group extra-address-line">
+					<div class="col-sm-8 col-sm-offset-2">
+						<input class="form-control address-line" placeholder="Address Line" name="address_line_4" type="text">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="city" class="col-sm-2 control-label">City</label>
+					<div class="col-sm-6">
+						<input class="form-control address-line" placeholder="City" name="city" type="text" id="city">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="country_code" class="col-sm-2 control-label">Country</label>
+					<div class="col-sm-6">
+						<select class="form-control address-line" id="country_code" name="country_code"><option value="" selected="selected">Select destination country</option><option value="AFG">Afghanistan</option><option value="ALA">&Aring;land Islands</option><option value="ALB">Albania</option><option value="DZA">Algeria</option><option value="ASM">American Samoa</option><option value="AND">Andorra</option><option value="AGO">Angola</option><option value="AIA">Anguilla</option><option value="ATA">Antarctica</option><option value="ATG">Antigua and Barbuda</option><option value="ARG">Argentina</option><option value="ARM">Armenia</option><option value="ABW">Aruba</option><option value="AUS">Australia</option><option value="AUT">Austria</option><option value="AZE">Azerbaijan</option><option value="BHS">Bahamas</option><option value="BHR">Bahrain</option><option value="BGD">Bangladesh</option><option value="BRB">Barbados</option><option value="BLR">Belarus</option><option value="BEL">Belgium</option><option value="BLZ">Belize</option><option value="BEN">Benin</option><option value="BMU">Bermuda</option><option value="BTN">Bhutan</option><option value="BOL">Bolivia</option><option value="BES">Bonaire, Sint Eustatius and Saba</option><option value="BIH">Bosnia and Herzegovina</option><option value="BWA">Botswana</option><option value="BVT">Bouvet Island</option><option value="BRA">Brazil</option><option value="IOT">British Indian Ocean Territory</option><option value="BRN">Brunei Darussalam</option><option value="BGR">Bulgaria</option><option value="BFA">Burkina Faso</option><option value="BDI">Burundi</option><option value="CPV">Cabo Verde</option><option value="KHM">Cambodia</option><option value="CMR">Cameroon</option><option value="CAN">Canada</option><option value="CYM">Cayman Islands</option><option value="CAF">Central African Republic</option><option value="TCD">Chad</option><option value="CHL">Chile</option><option value="CHN">China</option><option value="CXR">Christmas Island</option><option value="CCK">Cocos (Keeling) Islands</option><option value="COL">Colombia</option><option value="COM">Comoros</option><option value="COG">Congo</option><option value="COD">Congo, Democratic Republic</option><option value="COK">Cook Islands</option><option value="CRI">Costa Rica</option><option value="HRV">Croatia</option><option value="CUB">Cuba</option><option value="CUW">Cura&ccedil;ao</option><option value="CYP">Cyprus</option><option value="CZE">Czech Republic</option><option value="CIV">C&ocirc;te d&#039;Ivoire</option><option value="DNK">Denmark</option><option value="DJI">Djibouti</option><option value="DMA">Dominica</option><option value="DOM">Dominican Republic</option><option value="ECU">Ecuador</option><option value="EGY">Egypt</option><option value="SLV">El Salvador</option><option value="GNQ">Equatorial Guinea</option><option value="ERI">Eritrea</option><option value="EST">Estonia</option><option value="ETH">Ethiopia</option><option value="FLK">Falkland Islands (Malvinas)</option><option value="FRO">Faroe Islands</option><option value="FJI">Fiji</option><option value="FIN">Finland</option><option value="FRA">France</option><option value="GUF">French Guiana</option><option value="PYF">French Polynesia</option><option value="ATF">French Southern Territories</option><option value="GAB">Gabon</option><option value="GMB">Gambia</option><option value="GEO">Georgia</option><option value="DEU">Germany</option><option value="GHA">Ghana</option><option value="GIB">Gibraltar</option><option value="GRC">Greece</option><option value="GRL">Greenland</option><option value="GRD">Grenada</option><option value="GLP">Guadeloupe</option><option value="GUM">Guam</option><option value="GTM">Guatemala</option><option value="GGY">Guernsey</option><option value="GIN">Guinea</option><option value="GNB">Guinea-Bissau</option><option value="GUY">Guyana</option><option value="HTI">Haiti</option><option value="HMD">Heard Island and McDonald Islands</option><option value="VAT">Holy See (Vatican City State)</option><option value="HND">Honduras</option><option value="HKG">Hong Kong</option><option value="HUN">Hungary</option><option value="ISL">Iceland</option><option value="IND">India</option><option value="IDN">Indonesia</option><option value="IRN">Iran, Islamic Republic</option><option value="IRQ">Iraq</option><option value="IRL">Ireland</option><option value="IMN">Isle of Man</option><option value="ISR">Israel</option><option value="ITA">Italy</option><option value="JAM">Jamaica</option><option value="JPN">Japan</option><option value="JEY">Jersey</option><option value="JOR">Jordan</option><option value="KAZ">Kazakhstan</option><option value="KEN">Kenya</option><option value="KIR">Kiribati</option><option value="PRK">Korea, Democratic People&#039;s Republic</option><option value="KOR">Korea, Republic</option><option value="KWT">Kuwait</option><option value="KGZ">Kyrgyzstan</option><option value="LAO">Lao People&#039;s Democratic Republic</option><option value="LVA">Latvia</option><option value="LBN">Lebanon</option><option value="LSO">Lesotho</option><option value="LBR">Liberia</option><option value="LBY">Libya</option><option value="LIE">Liechtenstein</option><option value="LTU">Lithuania</option><option value="LUX">Luxembourg</option><option value="MAC">Macao</option><option value="MKD">Macedonia, former Yugoslav Republic</option><option value="MDG">Madagascar</option><option value="MWI">Malawi</option><option value="MYS">Malaysia</option><option value="MDV">Maldives</option><option value="MLI">Mali</option><option value="MLT">Malta</option><option value="MHL">Marshall Islands</option><option value="MTQ">Martinique</option><option value="MRT">Mauritania</option><option value="MUS">Mauritius</option><option value="MYT">Mayotte</option><option value="MEX">Mexico</option><option value="FSM">Micronesia, Federated States</option><option value="MDA">Moldova</option><option value="MCO">Monaco</option><option value="MNG">Mongolia</option><option value="MNE">Montenegro</option><option value="MSR">Montserrat</option><option value="MAR">Morocco</option><option value="MOZ">Mozambique</option><option value="MMR">Myanmar</option><option value="NAM">Namibia</option><option value="NRU">Nauru</option><option value="NPL">Nepal</option><option value="NLD">Netherlands</option><option value="NCL">New Caledonia</option><option value="NZL">New Zealand</option><option value="NIC">Nicaragua</option><option value="NER">Niger</option><option value="NGA">Nigeria</option><option value="NIU">Niue</option><option value="NFK">Norfolk Island</option><option value="MNP">Northern Mariana Islands</option><option value="NOR">Norway</option><option value="OMN">Oman</option><option value="PAK">Pakistan</option><option value="PLW">Palau</option><option value="PSE">Palestine</option><option value="PAN">Panama</option><option value="PNG">Papua New Guinea</option><option value="PRY">Paraguay</option><option value="PER">Peru</option><option value="PHL">Philippines</option><option value="PCN">Pitcairn</option><option value="POL">Poland</option><option value="PRT">Portugal</option><option value="PRI">Puerto Rico</option><option value="QAT">Qatar</option><option value="ROU">Romania</option><option value="RUS">Russian Federation</option><option value="RWA">Rwanda</option><option value="REU">R&eacute;union</option><option value="BLM">Saint Barth&eacute;lemy</option><option value="SHN">Saint Helena, Ascension and Tristan</option><option value="KNA">Saint Kitts and Nevis</option><option value="LCA">Saint Lucia</option><option value="MAF">Saint Martin (French part)</option><option value="SPM">Saint Pierre and Miquelon</option><option value="VCT">Saint Vincent and the Grenadines</option><option value="WSM">Samoa</option><option value="SMR">San Marino</option><option value="STP">Sao Tome and Principe</option><option value="SAU">Saudi Arabia</option><option value="SEN">Senegal</option><option value="SRB">Serbia</option><option value="SYC">Seychelles</option><option value="SLE">Sierra Leone</option><option value="SGP">Singapore</option><option value="SXM">Sint Maarten (Dutch part)</option><option value="SVK">Slovakia</option><option value="SVN">Slovenia</option><option value="SLB">Solomon Islands</option><option value="SOM">Somalia</option><option value="ZAF">South Africa</option><option value="SGS">South Georgia, South Sandwich</option><option value="SSD">South Sudan</option><option value="ESP">Spain</option><option value="LKA">Sri Lanka</option><option value="SDN">Sudan</option><option value="SUR">Suriname</option><option value="SJM">Svalbard and Jan Mayen</option><option value="SWZ">Swaziland</option><option value="SWE">Sweden</option><option value="CHE">Switzerland</option><option value="SYR">Syrian Arab Republic</option><option value="TWN">Taiwan</option><option value="TJK">Tajikistan</option><option value="TZA">Tanzania, United Republic</option><option value="THA">Thailand</option><option value="TLS">Timor-Leste</option><option value="TGO">Togo</option><option value="TKL">Tokelau</option><option value="TON">Tonga</option><option value="TTO">Trinidad and Tobago</option><option value="TUN">Tunisia</option><option value="TUR">Turkey</option><option value="TKM">Turkmenistan</option><option value="TCA">Turks and Caicos Islands</option><option value="TUV">Tuvalu</option><option value="UGA">Uganda</option><option value="UKR">Ukraine</option><option value="ARE">United Arab Emirates</option><option value="GBR">United Kingdom</option><option value="USA">United States</option><option value="UMI">United States Minor Outlying Islands</option><option value="URY">Uruguay</option><option value="UZB">Uzbekistan</option><option value="VUT">Vanuatu</option><option value="VEN">Venezuela</option><option value="VNM">Viet Nam</option><option value="VGB">Virgin Islands, British</option><option value="VIR">Virgin Islands, U.S.</option><option value="WLF">Wallis and Futuna</option><option value="ESH">Western Sahara</option><option value="YEM">Yemen</option><option value="ZMB">Zambia</option><option value="ZWE">Zimbabwe</option></select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="postcode" class="col-sm-2 control-label">Postcode</label>
+					<div class="col-sm-6">
+						<input class="form-control address-line" placeholder="Postcode" name="postcode" type="text" id="postcode">
+					</div>
+				</div>
+			</div>
+
+							<input disabled="1" id="submit" class="call-to-action" type="submit" value="CREATE POSTCARD">
+			
+		</form>
+
+	</div>
+
+
+		<div id="bootstrap-cdn-check" class="hidden" style="height:1px;"></div>
+
+		<!-- JQuery with fallbacks - http://eddmann.com/posts/providing-local-js-and-css-resources-for-cdn-fallbacks/ -->
+		<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/fallbacks/jquery-2.1.4.min.js"><\/script>')</script>
+
+		<!-- StyleSheet CDN Fallbacks - http://theericbutler.wordpress.com/2014/03/20/how-to-fall-back-to-a-local-bootstrap-css-file-if-the-cdn-is-down/ -->
+		<script>
+			if ($('#bootstrap-cdn-check').is(':visible') === true) {
+				$('<link rel="stylesheet" type="text/css" href="/css/fallbacks/bootstrap.min.css">').appendTo('head');
+			}
+		</script>
+
+		
+	<script src="https://code.createjs.com/createjs-2015.05.21.min.js"></script>
+	<script>createjs || document.write('<script src="js/fallbacks/createjs-2015.05.21.min.js"><\/script>')</script>
+
+	<script type="text/javascript">
+
+		window.onbeforeunload = function() {
+			return "If you leave now, your postcard will not be saved.";
+		};
+
+		function disableLeaveNotification() {
+			window.onbeforeunload = null;
+		}
+
+		(function(){
+			var postcardStyles = {"flagY":35,"margin":0.05,"addressHeightBaseline":0.375,"addressLineHeight":0.08,"addressFontSize":35,"textHeightBaseline":0.24,"textFontSize":43,"textLineHeight":0.04,"textColumnWrap":27,"textMaxLines":18,"textFont":"Dudu_Calligraphy","addressFont":"Sansation_Bold"};
+
+			/* Floating preview */
+			var $floatingPreview = $('#floating-preview'),
+				$preview = $('#preview'),
+				$window = $(window),
+				updateFloatingPreview = function() {
+					if ($window.scrollTop() > $preview.height()) {
+						$floatingPreview.show();
+					} else {
+						$floatingPreview.hide();
+					}
+				};
+			$window.scroll(updateFloatingPreview);
+			updateFloatingPreview();
+
+			/* Layout */
+			var $canvas = $preview.find('.canvas');
+				stage = new createjs.Stage("preview-canvas"),
+				previewFullscreen = false,
+				previewReady = false,
+				previewFront = false,
+				width = 0,
+				height = 0;
+
+			$(document).ready(function() {
+				previewReady = true;
+				updatePreview();
+			});
+			$window.resize(function() { onResize(); });
+			onResize();
+
+			/* Country Select */
+			var $countryField = $('input[name="origin_country_id"]'),
+				$countrySelect = $('#postcard-country .js-select'),
+				$placeholder = $countrySelect.find('.placeholder');
+
+			// Init selected country
+			if ($countrySelect.find('.options .selected').length == 0) {
+				$countrySelect.find('.options li').first().addClass('selected');
+			}
+			var postcardCountry = $countrySelect.find('.options .selected').data('country');
+			$countrySelect.addClass('country-' + postcardCountry.tag);
+			$placeholder.text(postcardCountry.name);
+			$countryField.val(postcardCountry.id);
+
+			// Init event listeners
+			$placeholder.click(function() {
+				toggleSelect();
+			});
+
+			$countrySelect.find('.options li').click(function() {
+				var $this = $(this);
+
+				if (!$this.hasClass('.selected')) {
+					updateCountry($countrySelect.find('.options .selected'), $this);
+				}
+
+				toggleSelect();
+			});
+
+			$(document).click(function(ev) {
+				var $target = $(ev.target);
+				if($countrySelect.hasClass('active') && !$target.hasClass('js-select') && $target.parents('.js-select').length == 0) {
+					toggleSelect();
+				}
+			});
+
+			/* Front Image */
+			var publicImagesThumbnails = {"belgium":[{"url":"https:\/\/postcards.lincolnschilli.com\/img\/thumbnails\/belgium\/1.jpg","image_id":"1"}],"germany":[{"url":"https:\/\/postcards.lincolnschilli.com\/img\/thumbnails\/germany\/2.jpg","image_id":"2"},{"url":"https:\/\/postcards.lincolnschilli.com\/img\/thumbnails\/germany\/3.jpg","image_id":"3"}],"ireland":[{"url":"https:\/\/postcards.lincolnschilli.com\/img\/thumbnails\/ireland\/23.jpg","image_id":"23"}],"italy":[{"url":"https:\/\/postcards.lincolnschilli.com\/img\/thumbnails\/italy\/4.jpg","image_id":"4"},{"url":"https:\/\/postcards.lincolnschilli.com\/img\/thumbnails\/italy\/5.jpg","image_id":"5"},{"url":"https:\/\/postcards.lincolnschilli.com\/img\/thumbnails\/italy\/6.jpg","image_id":"6"}],"netherlands":[{"url":"https:\/\/postcards.lincolnschilli.com\/img\/thumbnails\/netherlands\/13.jpg","image_id":"13"}],"slovenia":[{"url":"https:\/\/postcards.lincolnschilli.com\/img\/thumbnails\/slovenia\/7.jpg","image_id":"7"}],"spain":[{"url":"https:\/\/postcards.lincolnschilli.com\/img\/thumbnails\/spain\/10.jpg","image_id":"10"},{"url":"https:\/\/postcards.lincolnschilli.com\/img\/thumbnails\/spain\/8.jpg","image_id":"8"},{"url":"https:\/\/postcards.lincolnschilli.com\/img\/thumbnails\/spain\/9.jpg","image_id":"9"}],"switzerland":[{"url":"https:\/\/postcards.lincolnschilli.com\/img\/thumbnails\/switzerland\/11.jpg","image_id":"11"},{"url":"https:\/\/postcards.lincolnschilli.com\/img\/thumbnails\/switzerland\/12.jpg","image_id":"12"}],"unitedkingdom":[{"url":"https:\/\/postcards.lincolnschilli.com\/img\/thumbnails\/unitedkingdom\/24.jpg","image_id":"24"}]};
+			var frontImageUrl,
+				$image = $('#postcard-image'),
+				$uploadButton = $image.find('.upload'),
+				$uploadInput = $image.find('input[name="image"]'),
+				$frontImageInput = $image.find('input[name="front_image"]'),
+				$progressbar = $('<div class="progress"><div class="progress-bar progress-bar-striped active animated"><span>Uploading...</span></div></div>');
+			loadCountryImages(postcardCountry.tag);
+			$image.on('click', '.thumb', function() {
+				var $this = $(this);
+				if (!$this.hasClass('selected')) {
+					$image.find('.selected').removeClass('selected');
+					$this.addClass('selected');
+					updateFrontImageUrl($this.find('img').attr('src'));
+				}
+			});
+			$uploadButton.click(function(e) {
+				if (!$(e.target).is('input[name="image"]')) {
+					$uploadInput.trigger('click');
+				}
+			});
+			$image.on('change', 'input[name="image"]', function(e) {
+				var file = $uploadInput[0].files[0];
+				if (file) {
+					if (file.size < 3145729) {
+						var reader = new FileReader();
+						$uploadButton.replaceWith($progressbar);
+						$progressbar.find('.progress-bar').width('0%');
+						reader.onload = function() {
+							$progressbar.replaceWith($uploadButton);
+							var $newItem = $('<li class="thumb selected" data-image="' + reader.result + '"><a><img src="' + reader.result +'"></img></a></li>'),
+								$selectedImage = $image.find('.selected'),
+								$img = $newItem.find('img').first();
+							if ($selectedImage.length > 0) {
+								$selectedImage.removeClass('selected');
+							}
+							if ($img.width() < $img.height()) {
+								$img.addClass('portrait');
+							}
+							$newItem.insertBefore($uploadButton).after('\n');
+							updateFrontImageUrl($img.attr('src'));
+						};
+						reader.onprogress = function(e) {
+							$progressbar.find('.progress-bar').width(((e.loaded / e.total)*100) + '%');
+						}
+						reader.onabort = function() {
+							$progressbar.replaceWith($uploadButton);
+						}
+						reader.onerror = reader.onabort;
+						reader.readAsDataURL(file);
+					} else {
+						// TODO reduce image size instead of displaying this alert
+						alert('File size must be inferior to 3MB');
+					}
+				}
+			});
+			$('#submit').click(function() {
+				var $selectedImage = $image.find('.selected');
+				if ($selectedImage.length > 0) {
+					$frontImageInput.val($selectedImage.data('image'));
+				} else {
+					$frontImageInput.val('');
+				}
+				disableLeaveNotification();
+			});
+
+			/* Preview Actions */
+			var $actions = $('.actions'),
+				$flip = $('#flip'),
+				$fullscreen = $('.fullscreen'),
+				$previewWrapper = $('#preview .wrapper'),
+				$overlay = $('<div id="overlay"></div>');
+			$overlay.appendTo($('body'));
+			$overlay.hide();
+
+			$overlay.click(function(ev) {
+				var targetId = $(ev.target).attr('id');
+				if (targetId == $overlay.attr('id')) {
+					previewFullscreen = false;
+					$overlay.hide();
+					$fullscreen.show();
+					$canvas.appendTo($previewWrapper);
+					$actions.appendTo($previewWrapper);
+					onResize();
+				}
+			});
+
+			$fullscreen.click(function() {
+				previewFullscreen = true;
+				$fullscreen.hide();
+				$overlay.show();
+				$overlay.append($canvas);
+				$overlay.append($actions);
+				onResize();
+			});
+
+			$flip.click(flipPreview);
+			$canvas.click(flipPreview);
+
+			/* Form */
+
+			// Prepare Fonts
+			var newStyle = document.createElement('style');
+			newStyle.appendChild(document.createTextNode('@font-face { font-family: PostcardTextFont; src: url("https://postcards.lincolnschilli.com/fonts/' + postcardStyles.textFont + '-web.ttf");}'));
+			newStyle.appendChild(document.createTextNode('@font-face { font-family: PostcardAddressFont; src: url("https://postcards.lincolnschilli.com/fonts/' + postcardStyles.addressFont + '-web.ttf");}'));
+			document.head.appendChild(newStyle);
+
+			// Text
+			var $postcardText = $('#postcard-text'),
+				$text = $postcardText.find('.form-control'),
+				$infoNumber = $postcardText.find('.info .number'),
+				postcardText = splitLines($text.val(), postcardStyles.textColumnWrap);
+			$infoNumber.html(postcardStyles.textMaxLines - postcardText.length);
+			if (postcardText.length > postcardStyles.textMaxLines) {
+				$postcardText.addClass('has-error');
+			} else {
+				$postcardText.removeClass('has-error');
+			}
+			$text.keyup(function() {
+				postcardText = splitLines($text.val(), postcardStyles.textColumnWrap);
+				$infoNumber.html(postcardStyles.textMaxLines - postcardText.length);
+				if (postcardText.length > postcardStyles.textMaxLines) {
+					$postcardText.addClass('has-error');
+				} else {
+					$postcardText.removeClass('has-error');
+				}
+				if (previewFront) {
+					flipPreview();
+				} else {
+					updatePreview();
+				}
+			});
+
+			// Address Lines
+			var postcardAddressLines = [],
+				$addAddressLine = $('#add-address-line'),
+				$postcardAddressLines = $('.address-line');
+			$postcardAddressLines.keyup(function() {
+				updateAddressLine();
+				if (previewFront) {
+					flipPreview();
+				} else {
+					updatePreview();
+				}
+			});
+			$('select.address-line').change(function() {
+				updateAddressLine();
+				if (previewFront) {
+					flipPreview();
+				} else {
+					updatePreview();
+				}
+			});
+			$addAddressLine.click(showOneMoreAddressLine);
+			updateAddressLine();
+
+			
+			// Functions
+			function onResize() {
+				if (previewFullscreen) {
+					var canvasWidth = $overlay.width()*0.9,
+						canvasHeight = canvasWidth/1.4;
+					if (canvasHeight > $overlay.height()*0.9) {
+						canvasHeight = $overlay.height()*0.9;
+						canvasWidth = canvasHeight*1.4;
+					}
+					$canvas.width(canvasWidth);
+					$canvas.height(canvasHeight);
+				} else {
+					$canvas.width('');
+					$canvas.height($canvas.width()/1.4);
+				}
+				width = $canvas.width();
+				height = $canvas.height();
+				stage.canvas.width = width;
+				stage.canvas.height = height;
+				if (previewReady) {
+					updatePreview();
+				}
+				updateFloatingPreview();
+			}
+
+			function toggleSelect() {
+				$countrySelect.find('li.focus').each(function() {
+					$(this).removeClass('focus');
+				});
+
+				if($countrySelect.hasClass('active')) {
+					$countrySelect.removeClass('active');
+				} else {
+					$countrySelect.addClass('active');
+				}
+			}
+
+			function updateCountry(oldCountry, newCountry) {
+				var oldCountryData = oldCountry.data('country'),
+					newCountryData = newCountry.data('country');
+				$countrySelect.removeClass('country-' + oldCountryData.tag);
+				$countrySelect.addClass('country-' + newCountryData.tag);
+				oldCountry.removeClass('selected');
+				newCountry.addClass('selected');
+				$placeholder.text(newCountryData.name);
+				$countryField.val(newCountryData.id);
+				postcardCountry = newCountryData;
+				loadCountryImages(postcardCountry.tag);
+				if (previewFront) {
+					flipPreview();
+				} else {
+					updatePreview();
+				}
+			}
+
+			function loadCountryImages(tag) {
+				$image.find('.country-specific').remove();
+				var imagesLength = publicImagesThumbnails[tag]?
+										publicImagesThumbnails[tag].length : 0;
+				if (imagesLength) {
+					for (var i = 0; i < imagesLength; i++) {
+						addCountryImage(publicImagesThumbnails[tag][i].image_id, publicImagesThumbnails[tag][i].url);
+					}
+				}
+
+				var $selectedImage = $('#postcard-image .selected img');
+				if ($selectedImage.length > 0) {
+					updateFrontImageUrl($selectedImage.attr('src'));
+				} else {
+					var $providedImages = $image.find('.provided');
+					if ($providedImages.length > 0) {
+						$providedImages.first().addClass('selected');
+						updateFrontImageUrl($providedImages.first().find('img').attr('src'));
+					} else {
+						updateFrontImageUrl(null);
+					}
+				}
+			}
+
+			function addCountryImage(imageId, imageUrl, isCountrySpecific, isSelected) {
+				isCountrySpecific = typeof isCountrySpecific !== 'undefined' ? isCountrySpecific : true;
+				isSelected = typeof isSelected !== 'undefined' ? isSelected : false;
+				var $countryImage = $('<li id="image-' + imageId + '" class="thumb provided" data-image="' + imageId + '">'
+					+ '<a>'
+						+'<img src="' + imageUrl +'"></img>'
+					+ '</a>'
+				+ '</li>');
+				if (isCountrySpecific) {
+					$countryImage.addClass('country-specific');
+				}
+				if (isSelected) {
+					var $selectedImage = $image.find('.selected');
+					if ($selectedImage.length > 0) {
+						$selectedImage.removeClass('selected');
+					}
+					$countryImage.addClass('selected');
+				}
+				$countryImage.prependTo($image.find('ul'))
+								.after('\n');
+			}
+
+			function updateAddressLine() {
+				postcardAddressLines.length = 0;
+				$postcardAddressLines.each(function() {
+					var $this = $(this);
+					var value = $this.val();
+					if (value) {
+						if ($this.is('select')) {
+							postcardAddressLines.push($this.find('option[value="'+value+'"]').text());
+						} else {
+							postcardAddressLines.push(value);
+						}
+					}
+				});
+			}
+
+			function updateFrontImageUrl(newImageUrl) {
+				frontImageUrl = newImageUrl;
+				if (newImageUrl != null) {
+					if (!previewFront) {
+						flipPreview();
+					} else {
+						updatePreview();
+					}
+				}
+			}
+
+			function showOneMoreAddressLine() {
+				var $next = $addAddressLine.parent().next();
+				if ($next.hasClass('extra-address-line')) {
+					$addAddressLine.appendTo($next);
+					$next.removeClass('extra-address-line');
+				} else {
+					$addAddressLine.hide();
+				}
+			}
+
+			function flipPreview() {
+				previewFront = !previewFront;
+				updatePreview();
+			}
+
+			function updatePreview() {
+				stage.removeAllChildren();
+
+				if (previewFront) {
+					if (frontImageUrl) {
+						var frontImage = new createjs.Bitmap(frontImageUrl);
+						listenImageCompleted(frontImage.image);
+
+						var imageWidth = width,
+							imageHeight = frontImage.image.height * width / frontImage.image.width;
+						if (imageHeight < height) {
+							imageHeight = height;
+							imageWidth = frontImage.image.width * height / frontImage.image.height;
+						}
+						frontImage.scaleX = imageWidth / frontImage.image.width;
+						frontImage.scaleY = imageHeight / frontImage.image.height;
+						frontImage.x = width/2 - imageWidth/2;
+						frontImage.y = height/2 - imageHeight/2;
+						stage.addChild(frontImage);
+					} else {
+						var fill = new createjs.Shape();
+						fill.graphics.beginFill('#aaa').drawRect(0, 0, width, height);
+						stage.addChild(fill);
+
+						var template = new createjs.Bitmap('https://postcards.lincolnschilli.com/img/postcard-back-template.png');
+						listenImageCompleted(template.image);
+
+						var scaleX = width / template.image.width;
+
+						var text = new createjs.Text("UPLOAD IMAGE", (scaleX*100) + "pt PostcardTextFont", "#fff");
+						text.x = width/2 - text.getBounds().width/2;
+						text.y = height/2 - text.getBounds().height/2;
+						stage.addChild(text);
+					}
+				} else {
+
+					// background
+					var fill = new createjs.Shape();
+					fill.graphics.beginFill(postcardCountry.color).drawRect(0, 0, width, height);
+					stage.addChild(fill);
+
+					// template
+					var template = new createjs.Bitmap('https://postcards.lincolnschilli.com/img/postcard-back-template.png');
+					listenImageCompleted(template.image);
+
+					var scaleX = width / template.image.width,
+						scaleY = height / template.image.height;
+					template.scaleX = scaleX;
+					template.scaleY = scaleY;
+					stage.addChild(template);
+
+					// flag
+					var flag = new createjs.Bitmap('https://postcards.lincolnschilli.com/img/flags/' + postcardCountry.tag + '.png');
+					listenImageCompleted(flag.image);
+
+					flag.scaleX = scaleX;
+					flag.scaleY = scaleY;
+					flag.x = width/2 - flag.image.width*scaleX/2;
+					flag.y = postcardStyles.flagY*scaleY;
+					stage.addChild(flag);
+
+					// address
+					var margin = width * postcardStyles.margin;
+					for (var i = 0; i < postcardAddressLines.length; i++) {
+						var address = new createjs.Text(postcardAddressLines[i], (postcardStyles.addressFontSize * scaleX) + "pt PostcardAddressFont", "#000");
+						address.x = width/2 + margin;
+						address.y = height*postcardStyles.addressHeightBaseline + height*postcardStyles.addressLineHeight*i - postcardStyles.addressFontSize*scaleX;
+						stage.addChild(address);
+					};
+
+					// text
+					var baseline = height * postcardStyles.textHeightBaseline,
+						fontSize = postcardStyles.textFontSize * scaleX,
+						lineHeight = height * postcardStyles.textLineHeight;
+					for (var i in postcardText) {
+						var text = new createjs.Text(postcardText[i], fontSize + "pt PostcardTextFont", "#000");
+						text.x = margin;
+						text.y = baseline + lineHeight*i;
+						stage.addChild(text);
+					}
+				}
+
+				// update
+				stage.update();
+			}
+
+			function listenImageCompleted(image) {
+				if ((typeof image.completed !== 'undefined' && !image.completed) ||
+						(typeof image.naturalWidth !== 'undefined' && image.naturalWidth === 0)) {
+					image.onload = updatePreview;
+				}
+			}
+
+			function splitLines(str, width) {
+				var lines = [],
+					separatorRegEx = /\s/,
+					strs = str.split('\n');
+
+				for (var i in strs) {
+					var lineBuffer = '',
+						nextSeparator,
+						newSegment;
+
+					str = strs[i];
+
+					do {
+						// Obtain new segment
+						nextSeparator = str.search(separatorRegEx) + 1;
+						if (nextSeparator == 0) {
+							// this will force to take the whole line
+							nextSeparator = str.length;
+						}
+						newSegment = str.substr(0, nextSeparator);
+						str = str.substr(nextSeparator);
+
+						// Append to line or create new line
+						if (lineBuffer.length + newSegment.length-1 >= width) {
+							lines.push(lineBuffer);
+							lineBuffer = newSegment;
+						} else {
+							lineBuffer += newSegment;
+						}
+					} while (str.length > 0);
+
+					lines.push(lineBuffer);
+				}
+
+				// Process lines
+				for (var i in lines) {
+					lineBuffer = lines[i];
+					lineBuffer = lineBuffer.trim();
+					if (lineBuffer.length > width) {
+						lineBuffer = lineBuffer.substr(0, width);
+					}
+					lines[i] = lineBuffer;
+				}
+
+				return lines;
+			}
+
+		})();
+
+	</script>
+
+		<script>
+			var $message = document.querySelector('#deprecation-message');
+
+			function dismissDeprecationMessage() {
+				$message.classList.add('dismissed');
+				document.cookie = 'deprecation-message-dismissed=true; max-age=3600';
+			}
+
+			if (document.cookie.indexOf('deprecation-message-dismissed=true') === -1) {
+				$message.classList.remove('dismissed');
+			}
+		</script>
+
+			</body>
+</html>
